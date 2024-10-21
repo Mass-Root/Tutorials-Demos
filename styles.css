@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+p {
+    font-size: 18px;
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux blocs de passer à la ligne si nécessaire */
+    justify-content: flex-start; /* Aligne les blocs à gauche */
+}
+
+.video-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Augmente le padding pour le confort */
+    width: 300px; /* Largeur fixe pour les cartes */
+    margin: 10px; /* Réduit l'espace entre les blocs */
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux vidéos de passer à la ligne si nécessaire */
+    justify-content: center; /* Centre les vidéos horizontalement */
+    margin: 20px 0; /* Ajoute de l'espace autour de la vidéo */
+}
+
+.video-card iframe {
+    max-width: 100%; /* Limite la largeur à 100% du conteneur */
+    height: auto; /* Maintient le ratio d'aspect */
+    border-radius: 8px; /* Arrondi léger aux coins de la vidéo */
+}
